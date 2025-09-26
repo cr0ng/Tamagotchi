@@ -47,7 +47,7 @@ NO, no, No, N ,n 입력시 게임 종료
             왼쪽이면 (L / l), 오른쪽이면 (R / r) 을 입력하면 돼요!
             과연 몇 번이나 맞출 수 있을까요? 👀
 
- ★ 키보드 따라치기: 다마고치 타자 연습! 🐣💨 ~~(시간 제한)~~
+ ★ 키보드 따라치기: 다마고치 타자 연습! 🐣💨 //시간 제한 삭제
                    화면에 나오는 단어를 그대로! 정확하게!  
                    실수 없이 타이핑해보세요 ⌨️   
 
@@ -109,7 +109,7 @@ NO, no, No, N ,n 입력시 게임 종료
 
 - 깨끗함 : 80 이상 : 변화 없음
 - 꼬질함 : 50 이상 : 행복도 -20
-- 더러움 : 50 미만 : 행복도 -20
+- 더러움 : 50 미만 : 행복도 -40
 
 ### 행복도 시스템
 
@@ -180,7 +180,9 @@ NO, no, No, N ,n 입력시 게임 종료
 - 다마고치의 상태 (에너지, 청결도, 행복도, 경험치 등)
 - 행동 함수 포함 (밥먹기, 식당, 목욕하기, 잠자기 등)
 
-  **RiceBall**, **Tteokbokki**, **Jelly**, **Cookie** : EatSomething() 포함하는 Tama의 자식 클래스 
+  EatingSomething() 함수는 기본 밥먹기 행동이며,
+  
+  **RiceBall**, **Tteokbokki**, **Jelly**, **Cookie** 는 EatSomething() 포함하는 Tama의 자식 클래스로 각각 음식에 맞는 이름과 비용, 에너지, 행복도를 넣어줍니다.  
 
 ### PlayGame
 - 메뉴바와 상태창 출력, 입력 처리
@@ -189,7 +191,28 @@ NO, no, No, N ,n 입력시 게임 종료
 
 ### MiniGame
 - 미니게임 실행 코드 모음
+- 경험치 획득시 경험치와 레벨 비교하여 레벨업 함수 포함
 
 ### Display
 - 다마고치 캐릭터 출력 담당
+
+---
+
+## 메인 화면
+<img width="847" height="730" alt="image" src="https://github.com/user-attachments/assets/18ab5431-d8b9-4e89-804d-080fc750b955" />
+
+캐릭터, 메뉴, 상태바를 모두 각각 함수로 출력
+
+메뉴에서 행동 선택
+
+
+## 놀아주기 - 미니게임 화면
+<img width="660" height="595" alt="image" src="https://github.com/user-attachments/assets/4e257294-3b4e-424c-90b2-e509447a1c3b" />
+
+미니게임 선택
+
+## 식당 화면
+<img width="636" height="616" alt="image" src="https://github.com/user-attachments/assets/1ba34b23-245d-471d-b030-daaff6a027d3" />
+
+구매할 음식 선택, 구매 후 바로 적용
 
